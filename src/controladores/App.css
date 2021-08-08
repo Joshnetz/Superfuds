@@ -1,0 +1,187 @@
+body {
+	overflow-x: hidden;
+}
+
+#App
+{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(4,auto);
+}
+
+.App-header
+{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 300px auto 60px 200px;
+    grid-column: span 3;
+    background-color: #25c16a;
+    color: #ffffff;
+    padding: 14px;
+    padding-bottom: 18px;
+
+}
+
+#banner
+{
+	grid-column: span 3;
+}
+
+.banner{
+	width: 98%;
+	margin: auto;
+	border-radius: 50px;
+}
+
+a{
+    text-decoration:none;
+}
+
+#carrito svg
+{
+	height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.n_compras {
+	border-radius: 34%;
+    background-color: #FFCB47;
+    color: #000;
+    position: relative;
+    top: -25px;
+    left: -13px;
+    padding: 0px 5px;
+    font-size: 10px;
+}
+
+
+#buscador2
+{
+	display: none;
+	grid-column: span 4;
+}
+
+#buscador
+{
+	display: block;
+}
+
+.buscador .input{
+	border-radius: 50px;
+    background-color: #fff;
+    display: grid;
+	grid-gap: 0px;
+	grid-template-columns: auto 38px;
+}
+
+.buscador input
+{
+	font-size: 16px;
+    margin: 10px;
+    margin-left: 21px;
+    border: 0px;
+    outline: none;
+}
+
+.buscador svg
+{
+	margin-top: 8px;
+}
+
+
+.buscador .inputicono
+{
+	vertical-align: middle;
+	width: 30px;
+}
+
+
+#perfil {
+	text-align: right;
+}
+    
+
+#perfil div{
+	vertical-align: top;
+    display: inline-block;
+    margin: 2px;
+}
+
+#perfil #perfil_info
+{
+	text-align: right;
+}
+
+#perfil span{
+	font-size: 12px;
+	color: #000;
+}
+
+#perfil img{
+	border-radius: 50%;
+	width: 45px;
+	margin-left: 8px;
+}
+
+#footer {
+	background-color: #25c16a;
+	padding: 10px;
+	color: #fff;
+	grid-column: span 3;
+}
+
+@media (max-width: 768px) {
+	#buscador2{
+		display: block;
+	}
+
+	#buscador {
+		display: none;
+	}
+}
+
+.displaynone {
+	display: none
+}
+
+.displayblock {
+	display: block;
+}
+
+#zona_carrito
+{
+	position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #ddd;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    color: #000;
+}
+
+#zona_carrito a
+{
+	color: #000;
+	cursor: pointer;
+	font-size: 26px;
+}
+
+#zona_carrito div
+{
+	margin-left: 10px;
+}
+
+#zona_carrito::first-letter{
+  color: #25c16a;
+}
+
+#zone_list_corrito {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 70% 10% 20%;
+    padding: 14px;
+    padding-bottom: 18px;
+}
